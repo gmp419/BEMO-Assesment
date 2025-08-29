@@ -9,7 +9,7 @@
 
 1. **Clone**  
    ```bash
-   git clone https://github.com/gmp419/BEMO-ASSESMENT.git
+   git clone https://github.com/gmp419/BEMO-Assesment.git
    cd smart-ticket-
    
 2. **Install PHP deps**
