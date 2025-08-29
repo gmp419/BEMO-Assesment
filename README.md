@@ -20,32 +20,35 @@
 
 4. **Environment**
    cp .env.example .env
-   DB_CONNECTION=mysql
-   DB_HOST=127.0.0.1
-   DB_PORT=3306
-   DB_DATABASE=tickets
-   DB_USERNAME=root
-   DB_PASSWORD=secret
-   QUEUE_CONNECTION=database
-   OPENAI_API_KEY=sk-xxx
-   OPENAI_CLASSIFY_ENABLED=true   # false = dummy data
+   ```
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=tickets
+    DB_USERNAME=root
+    DB_PASSWORD=secret
+    QUEUE_CONNECTION=database
+    OPENAI_API_KEY=sk-xxx
+    OPENAI_CLASSIFY_ENABLED=true # false = dummy data
+    OPENAI_ORGANIZATION=org-xxx
+   ```
 
-5. **Laravel key**
+6. **Laravel key**
    php artisan key:generate
 
-6. **DB & seed**
+7. **DB & seed**
    php artisan migrate --seed   # 25 sample tickets
 
-7. **Queue worker (second terminal)**
+8. **Queue worker (second terminal)**
    php artisan queue:work
 
-8. **Build assets**
+9. **Build assets**
    npm run dev
 
-9. **Serve**
+10. **Serve**
    php artisan serve
 
-10. **Open**
+11. **Open**
    http://localhost:8000 → done!
 
 **🧪 Assumptions & Trade-offs**
