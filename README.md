@@ -10,7 +10,7 @@
 1. **Clone**  
    ```bash
    git clone https://github.com/gmp419/BEMO-Assesment.git
-   cd smart-ticket-
+   cd BEMO-Assesment
    
 2. **Install PHP deps**
    composer install
